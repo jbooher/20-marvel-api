@@ -1,0 +1,47 @@
+.hero {
+  height: 200px;
+  background: linear-gradient(45deg, darkblue -60%, lightblue, darkblue);
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  &--profile {
+    width: 25%;
+
+    &-pic {
+      width: 100%;
+      margin-top: -50%;
+      border-radius: 5px;
+    }
+  }
+
+  &--content {
+    width: 70%;
+  }
+
+  &--title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &--event, &--character {
+    width: 20%;
+    margin: 5px;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+}
