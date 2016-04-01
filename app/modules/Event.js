@@ -12,7 +12,6 @@ class Event {
         return response.json();
       })
       .then((response) => {
-        console.log(response);
         this.title = response.data.results[0].title;
         this.description = response.data.results[0].description;
         this.image = `${response.data.results[0].thumbnail.path}.${response.data.results[0].thumbnail.extension}`;

@@ -1,7 +1,6 @@
 class Character {
   constructor(name = "Captain America") {
     this.name = name;
-    console.log(name);
     this.getData();
   }
 
@@ -19,7 +18,6 @@ class Character {
         return response.json();
       })
       .then((response) => {
-        console.log(response);
         this.id = response.data.results[0].id;
         this.description = response.data.results[0].description;
         this.image = `${response.data.results[0].thumbnail.path}.${response.data.results[0].thumbnail.extension}`;
@@ -37,9 +35,7 @@ class Character {
         return response.json();
       })
       .then((response) => {
-        console.log(response);
         this.events = response.data.results;
-        console.log(this.events);
 
         this.renderEvents();
       })
