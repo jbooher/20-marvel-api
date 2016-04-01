@@ -1,0 +1,94 @@
+.hero {
+  height: 200px;
+  background: linear-gradient(45deg, darkblue -60%, lightblue, darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--input {
+    height: 60px;
+    width: 240px;
+    font-size: 2em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin: 0;
+    margin-right: -7.5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--search {
+    height: 60px;
+    width: 140px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+    margin-left: -7.5px;
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  &--profile {
+    width: 25%;
+
+    &-pic {
+      width: 100%;
+      margin-top: -50%;
+      border-radius: 5px;
+    }
+
+    &-title {
+      text-align: center;
+    }
+  }
+
+  &--content {
+    width: 70%;
+  }
+
+  &--title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &--event, &--character {
+    width: 20%;
+    margin: 5px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 150px;
+      border-radius: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+
+      :hover {
+        color: darkblue;
+      }
+    }
+  }
+
+}
