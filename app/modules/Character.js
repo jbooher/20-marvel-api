@@ -18,12 +18,17 @@ class Character {
         return response.json();
       })
       .then((response) => {
-        this.id = response.data.results[0].id;
-        this.description = response.data.results[0].description;
-        this.image = `${response.data.results[0].thumbnail.path}.${response.data.results[0].thumbnail.extension}`;
-
-        this.render();
-        this.getEventData();
+        console.log(response);
+        if (response.data.results.length > 0 ) {
+          this.id = response.data.results[0].id;
+          this.description = response.data.results[0].description;
+          this.image = `${response.data.results[0].thumbnail.path}.${response.data.results[0].thumbnail.extension}`;
+          this.render();
+          this.getEventData();
+        }
+        else {
+          placeholder.innerHTML = "We couldn't find that hero.  Please search again.";
+        }
       })
   }
 
