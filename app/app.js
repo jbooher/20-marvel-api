@@ -7,8 +7,9 @@ import Event from "./modules/Event";
 let placeholder = document.querySelector("#placeholder");
 let input = document.querySelector("#input");
 let search = document.querySelector("#search");
+let form = document.querySelector("#form");
 
-search.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   console.log(input.value);
   placeholder.innerHTML = "";
   page(`/characters/${input.value}`);

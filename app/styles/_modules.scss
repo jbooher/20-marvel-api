@@ -5,6 +5,12 @@
   justify-content: center;
   align-items: center;
 
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &--input {
     height: 60px;
     width: 240px;
@@ -52,6 +58,7 @@
 
     &-title {
       text-align: center;
+      text-transform: capitalize;
     }
   }
 
