@@ -8,6 +8,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .hero form {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .hero--input {
     height: 60px;
     width: 240px;
@@ -44,7 +48,8 @@ body {
       margin-top: -50%;
       border-radius: 5px; }
     .content--profile-title {
-      text-align: center; }
+      text-align: center;
+      text-transform: capitalize; }
   .content--content {
     width: 70%; }
   .content--title {
